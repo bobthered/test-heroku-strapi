@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "daylilies",
+  "info": {
+    "singularName": "daylily",
+    "pluralName": "daylilies",
+    "displayName": "Daylily",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "price": {
+      "type": "decimal"
+    },
+    "color": {
+      "type": "string"
+    },
+    "bloom": {
+      "type": "decimal"
+    },
+    "height": {
+      "type": "decimal"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "sales": {
+      "type": "integer"
+    },
+    "views": {
+      "type": "integer"
+    },
+    "rebloom": {
+      "type": "boolean"
+    },
+    "fragrant": {
+      "type": "boolean"
+    },
+    "hybridizer": {
+      "type": "string"
+    },
+    "inStock": {
+      "type": "boolean"
+    },
+    "season": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::season.season"
+    }
+  }
+}
